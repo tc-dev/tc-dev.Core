@@ -41,6 +41,8 @@
     <Compile Include="Domain\BaseEntity.cs" />
     <Compile Include="Domain\Extensions\IdentifiableExtensions.cs" />
     <Compile Include="Domain\IIdentifiable.cs" />
+    <Compile Include="Identity\IAppRoleManager.cs" />
+    <Compile Include="Identity\IAppUserManager.cs" />
     <Compile Include="Identity\Models\AppAuthenticationDescription.cs" />
     <Compile Include="Identity\Models\AppExternalLoginInfo.cs" />
     <Compile Include="Identity\Models\AppIdentityResult.cs" />
@@ -61,6 +63,7 @@
       <Name>tc-dev.Core.Common</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
