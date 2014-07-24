@@ -37,7 +37,15 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Extensions\IdentifiableUtilsTests.cs" />
+    <Compile Include="Domain\FakeEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\tc-dev.Core\tc-dev.Core.csproj">
+      <Project>{644BFC3B-3299-4908-AB5F-43C4FBEA92E3}</Project>
+      <Name>tc-dev.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
