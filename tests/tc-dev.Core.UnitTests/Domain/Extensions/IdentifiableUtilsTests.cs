@@ -24,7 +24,7 @@ namespace tc_dev.Core.UnitTests.Domain.Extensions
         }
 
         [Test]
-        public void IsNew_OldEntity_ReturnsTrue() {
+        public void IsNew_OldEntity_ReturnsFalse() {
             FakeEntity oldEntity = new FakeEntity {
                 Id = 42,
                 DateCreated = DateTime.Now.AddDays(-42)
