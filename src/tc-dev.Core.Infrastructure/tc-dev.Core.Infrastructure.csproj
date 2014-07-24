@@ -77,11 +77,16 @@
     <Compile Include="EntityFramework\IDbContext.cs" />
     <Compile Include="EntityFramework\PersistableRepository.cs" />
     <Compile Include="EntityFramework\QueryBuilder.cs" />
+    <Compile Include="Identity\AppAuthenticationManager.cs" />
+    <Compile Include="Identity\AppRoleManager.cs" />
     <Compile Include="Identity\Models\AppIdentityRole.cs" />
     <Compile Include="Identity\Models\AppIdentityUser.cs" />
     <Compile Include="Identity\Models\AppIdentityUserClaim.cs" />
     <Compile Include="Identity\Models\AppIdentityUserLogin.cs" />
     <Compile Include="Identity\Models\AppIdentityUserRole.cs" />
+    <Compile Include="Identity\AppUserManager.cs" />
+    <Compile Include="Identity\Utilities\IdentityModelFactory.cs" />
+    <Compile Include="Identity\Utilities\IdentityModelFactoryExtensions.cs" />
     <Compile Include="Logging\NLogLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
