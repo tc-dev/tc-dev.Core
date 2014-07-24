@@ -34,6 +34,10 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\IPersistableRepository.cs" />
+    <Compile Include="Data\IQueryableRepository.cs" />
+    <Compile Include="Data\IQueryBuilder.cs" />
+    <Compile Include="Data\IUnitOfWork.cs" />
     <Compile Include="Domain\BaseEntity.cs" />
     <Compile Include="Domain\Extensions\IdentifiableExtensions.cs" />
     <Compile Include="Domain\IIdentifiable.cs" />
