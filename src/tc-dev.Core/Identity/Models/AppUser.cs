@@ -6,12 +6,12 @@ namespace tc_dev.Core.Identity.Models
     public class AppUser
     {
         public AppUser() {
-            Claims = new List<ApplicationUserClaim>();
+            Claims = new List<AppUserClaim>();
             Roles = new List<AppUserRole>();
             Logins = new List<AppUserLogin>();
         }
         public virtual int AccessFailedCount { get; set; }
-        public virtual ICollection<ApplicationUserClaim> Claims { get; private set; }
+        public virtual ICollection<AppUserClaim> Claims { get; private set; }
         public virtual string Email { get; set; }
         public virtual bool EmailConfirmed { get; set; }
         public virtual int Id { get; set; }
