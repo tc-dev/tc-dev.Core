@@ -7,21 +7,21 @@ namespace tc_dev.Core.Common.UnitTests.Utilities
 	[TestFixture]
     public class ExceptionUtilsTests
     {
-	    [TestCase(null, null)]
-	    [TestCase("paramName", "message")]
-	    public void ThrowIfNull_NullClass_ThrowsException(string paramName, string message) {
+        [TestCase(null, null)]
+        [TestCase("paramName", "message")]
+        public void ThrowIfNull_NullClass_ThrowsException(string paramName, string message) {
             string nullThing = null;
 
-	        Assert.Throws<ArgumentNullException>(() => nullThing.ThrowIfNull(paramName, message));
-	    }
+            Assert.Throws<ArgumentNullException>(() => nullThing.ThrowIfNull(paramName, message));
+        }
 
-	    [TestCase(null, null)]
-	    [TestCase("paramName", "message")]
-	    public void ThrowIfNull_NotNullClass_DoesNotThrowException(string paramName, string message) {
-	        string notNullThing = "imNotNull";
+        [TestCase(null, null)]
+        [TestCase("paramName", "message")]
+        public void ThrowIfNull_NotNullClass_DoesNotThrowException(string paramName, string message) {
+            string notNullThing = "imNotNull";
 
-	        Assert.DoesNotThrow(() => notNullThing.ThrowIfNull(paramName, message));
-	    }
+            Assert.DoesNotThrow(() => notNullThing.ThrowIfNull(paramName, message));
+        }
 
         [TestCase(null, null)]
         [TestCase("paramName", "message")]
