@@ -34,8 +34,8 @@ namespace tc_dev.Core.Identity
         AppUser FindByEmail(string email);
         Task<AppUser> FindByEmailAsync(string email);
 
-        AppUser FindByExternalLoginInfo(AppExternalLoginInfo loginInfo);
-        Task<AppUser> FindByExternalLoginInfoAsync(AppExternalLoginInfo loginInfo);
+        AppUser FindByUserLoginInfo(AppUserLoginInfo loginInfo);
+        Task<AppUser> FindByUserLoginInfoAsync(AppUserLoginInfo loginInfo);
 
         AppUser FindById(int userId);
         Task<AppUser> FindByIdAsync(int userId);
