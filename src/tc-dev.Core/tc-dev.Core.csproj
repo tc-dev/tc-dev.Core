@@ -42,6 +42,7 @@
     <Compile Include="Domain\Extensions\IdentifiableExtensions.cs" />
     <Compile Include="Domain\IIdentifiable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\ILogger.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\tc-dev.Core.Common\tc-dev.Core.Common.csproj">
