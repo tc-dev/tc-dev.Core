@@ -74,6 +74,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityFramework\Conventions\ForeignKeyNamingConvention.cs" />
     <Compile Include="EntityFramework\IDbContext.cs" />
     <Compile Include="EntityFramework\PersistableRepository.cs" />
     <Compile Include="EntityFramework\QueryBuilder.cs" />
