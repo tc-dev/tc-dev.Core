@@ -7,14 +7,14 @@ namespace tc_dev.Core.Identity
 {
     public interface IAppRoleManager : IDisposable
     {
-        Task<AppIdentityResult> CreateAsync(ApplicationRole role);
-        AppIdentityResult Create(ApplicationRole role);
+        AppIdentityResult Create(AppRole role);
+        Task<AppIdentityResult> CreateAsync(AppRole role);
         Task<AppIdentityResult> DeleteAsync(int roleId);
-        Task<ApplicationRole> FindByIdAsync(int roleId);
-        ApplicationRole FindByName(string roleName);
-        Task<ApplicationRole> FindByNameAsync(string roleName);
-        IEnumerable<ApplicationRole> GetRoles();
-        Task<IEnumerable<ApplicationRole>> GetRolesAsync();
+        Task<AppRole> FindByIdAsync(int roleId);
+        AppRole FindByName(string roleName);
+        Task<AppRole> FindByNameAsync(string roleName);
+        IEnumerable<AppRole> GetRoles();
+        Task<IEnumerable<AppRole>> GetRolesAsync();
         Task<bool> RoleExistsAsync(string roleName);
         Task<AppIdentityResult> UpdateAsync(int roleId, string roleName);
     }

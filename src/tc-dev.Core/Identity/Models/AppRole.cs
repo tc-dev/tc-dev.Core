@@ -2,9 +2,9 @@
 
 namespace tc_dev.Core.Identity.Models
 {
-    public class ApplicationRole
+    public class AppRole
     {
-        public ApplicationRole() {
+        public AppRole() {
             Users = new List<AppUserRole>();
         }
 
