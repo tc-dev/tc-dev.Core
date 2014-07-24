@@ -13,8 +13,8 @@ namespace tc_dev.Core.Identity.Models
             set;
         }
 
-        public virtual ICollection<AppUserRole> Users { get; private set; }
-
         public string Name { get; set; }
+
+        public virtual ICollection<AppUserRole> Users { get; private set; }
     }
 }
