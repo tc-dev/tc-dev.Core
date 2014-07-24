@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tc-dev.Core", "src\tc-dev.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tc-dev.Core.UnitTests", "tests\tc-dev.Core.UnitTests\tc-dev.Core.UnitTests.csproj", "{0E0A66E8-BE18-4E20-B89F-860367C68017}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tc-dev.Core.Common", "src\tc-dev.Core.Common\tc-dev.Core.Common.csproj", "{E927FF61-4B47-4959-9329-2E170CEB7C69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tc-dev.Core.Common.UnitTests", "tests\tc-dev.Core.Common.UnitTests\tc-dev.Core.Common.UnitTests.csproj", "{8C7BFE9F-B876-4EEC-BDD1-36561A271C38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{0E0A66E8-BE18-4E20-B89F-860367C68017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E0A66E8-BE18-4E20-B89F-860367C68017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E0A66E8-BE18-4E20-B89F-860367C68017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E927FF61-4B47-4959-9329-2E170CEB7C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E927FF61-4B47-4959-9329-2E170CEB7C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E927FF61-4B47-4959-9329-2E170CEB7C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E927FF61-4B47-4959-9329-2E170CEB7C69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7BFE9F-B876-4EEC-BDD1-36561A271C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7BFE9F-B876-4EEC-BDD1-36561A271C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7BFE9F-B876-4EEC-BDD1-36561A271C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7BFE9F-B876-4EEC-BDD1-36561A271C38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,5 +51,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{644BFC3B-3299-4908-AB5F-43C4FBEA92E3} = {52CDD551-AD00-4274-9451-183AC6745165}
 		{0E0A66E8-BE18-4E20-B89F-860367C68017} = {D3ED214F-5D3E-4580-A2CA-39694AD7C66D}
+		{E927FF61-4B47-4959-9329-2E170CEB7C69} = {52CDD551-AD00-4274-9451-183AC6745165}
+		{8C7BFE9F-B876-4EEC-BDD1-36561A271C38} = {D3ED214F-5D3E-4580-A2CA-39694AD7C66D}
 	EndGlobalSection
 EndGlobal
