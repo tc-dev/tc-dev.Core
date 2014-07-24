@@ -8,7 +8,7 @@ namespace tc_dev.Core.Identity.Models
         public AppUser() {
             Claims = new List<ApplicationUserClaim>();
             Roles = new List<AppUserRole>();
-            Logins = new List<ApplicationUserLogin>();
+            Logins = new List<AppUserLogin>();
         }
         public virtual int AccessFailedCount { get; set; }
         public virtual ICollection<ApplicationUserClaim> Claims { get; private set; }
@@ -17,7 +17,7 @@ namespace tc_dev.Core.Identity.Models
         public virtual int Id { get; set; }
         public virtual bool LockoutEnabled { get; set; }
         public virtual DateTime? LockoutEndDateUtc { get; set; }
-        public virtual ICollection<ApplicationUserLogin> Logins { get; private set; }
+        public virtual ICollection<AppUserLogin> Logins { get; private set; }
         public virtual string PasswordHash { get; set; }
         public virtual string PhoneNumber { get; set; }
         public virtual bool PhoneNumberConfirmed { get; set; }
