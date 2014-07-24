@@ -10,6 +10,6 @@ namespace tc_dev.Core.Identity.Models
 
         public ClaimsIdentity ExternalIdentity { get; set; }
 
-        public AppExternalLoginInfo Login { get; set; }
+        public AppUserLoginInfo Login { get; set; }
     }
 }
