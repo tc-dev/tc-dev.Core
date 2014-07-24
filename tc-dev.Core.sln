@@ -29,6 +29,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F21289
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tc-dev.Core.Infrastructure", "src\tc-dev.Core.Infrastructure\tc-dev.Core.Infrastructure.csproj", "{97165B79-F808-40EB-B996-19E2C9DB8B0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tc-dev.Core.Infrastructure.UnitTests", "tests\tc-dev.Core.Infrastructure.UnitTests\tc-dev.Core.Infrastructure.UnitTests.csproj", "{8406D0EA-338D-4A5D-A019-4A98E901890A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{8C7BFE9F-B876-4EEC-BDD1-36561A271C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C7BFE9F-B876-4EEC-BDD1-36561A271C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C7BFE9F-B876-4EEC-BDD1-36561A271C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97165B79-F808-40EB-B996-19E2C9DB8B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97165B79-F808-40EB-B996-19E2C9DB8B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97165B79-F808-40EB-B996-19E2C9DB8B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97165B79-F808-40EB-B996-19E2C9DB8B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8406D0EA-338D-4A5D-A019-4A98E901890A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8406D0EA-338D-4A5D-A019-4A98E901890A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8406D0EA-338D-4A5D-A019-4A98E901890A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8406D0EA-338D-4A5D-A019-4A98E901890A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +72,7 @@ Global
 		{0E0A66E8-BE18-4E20-B89F-860367C68017} = {D3ED214F-5D3E-4580-A2CA-39694AD7C66D}
 		{E927FF61-4B47-4959-9329-2E170CEB7C69} = {52CDD551-AD00-4274-9451-183AC6745165}
 		{8C7BFE9F-B876-4EEC-BDD1-36561A271C38} = {D3ED214F-5D3E-4580-A2CA-39694AD7C66D}
+		{97165B79-F808-40EB-B996-19E2C9DB8B0D} = {52CDD551-AD00-4274-9451-183AC6745165}
+		{8406D0EA-338D-4A5D-A019-4A98E901890A} = {D3ED214F-5D3E-4580-A2CA-39694AD7C66D}
 	EndGlobalSection
 EndGlobal
