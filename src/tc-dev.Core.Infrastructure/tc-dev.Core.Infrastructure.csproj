@@ -82,6 +82,7 @@
     <Compile Include="Identity\AppAuthenticationManager.cs" />
     <Compile Include="Identity\AppOAuthProvider.cs" />
     <Compile Include="Identity\AppRoleManager.cs" />
+    <Compile Include="Identity\IdentityFactory.cs" />
     <Compile Include="Identity\Models\AppIdentityRole.cs" />
     <Compile Include="Identity\Models\AppIdentityUser.cs" />
     <Compile Include="Identity\Models\AppIdentityUserClaim.cs" />
