@@ -36,5 +36,11 @@ namespace tc_dev.Core.Infrastructure.EntityFramework.Configurations
                 .Property(m => m.Id)
                     .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
         }
+
+        public static void IgnorePhone(this EntityTypeConfiguration<AppIdentityUser> source) {
+            source
+                .Ignore(m => m.PhoneNumber)
+                .Ignore(m => m.PhoneNumberConfirmed);
+        }
     }
 }
