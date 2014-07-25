@@ -79,6 +79,24 @@ namespace tc_dev.Core.Infrastructure.Identity
             return appIdentityResult;
         }
 
+        public AppIdentityResult AddToRole(int userId, string roleName) {
+            roleName.ThrowIfNull("roleName");
+
+            var identityResult = _userManager.AddToRole(userId, roleName);
+            var appIdentityResult = IdentityModelFactory.Create(identityResult);
+
+            return appIdentityResult;
+        }
+
+        public async Task<AppIdentityResult> AddToRoleAsync(int userId, string roleName) {
+            roleName.ThrowIfNull("roleName");
+
+            var identityResult = await _userManager.AddToRoleAsync(userId, roleName);
+            var appIdentityResult = IdentityModelFactory.Create(identityResult);
+
+            return appIdentityResult;
+        }
+
         public AppIdentityResult ChangePassword(int userId, string oldPassword, string newPassword) {
             oldPassword.ThrowIfNull("oldPassword");
             newPassword.ThrowIfNull("newPassword");

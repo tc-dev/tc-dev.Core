@@ -19,6 +19,9 @@ namespace tc_dev.Core.Identity
         AppIdentityResult AddPassword(int userId, string password);
         Task<AppIdentityResult> AddPasswordAsync(int userId, string password);
 
+        AppIdentityResult AddToRole(int userId, string roleName);
+        Task<AppIdentityResult> AddToRoleAsync(int userId, string roleName);
+
         AppIdentityResult ChangePassword(int userId, string oldPassword, string newPassword);
         Task<AppIdentityResult> ChangePasswordAsync(int userId, string oldPassword, string newPassword);
 
