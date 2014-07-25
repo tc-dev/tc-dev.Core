@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
@@ -10,12 +9,12 @@ using tc_dev.Core.Identity;
 
 namespace tc_dev.Core.Infrastructure.Identity
 {
-    public class OAuthProvider : OAuthAuthorizationServerProvider
+    public class AppOAuthProvider : OAuthAuthorizationServerProvider
     {
         private readonly Func<IAppUserManager> _userManagerFactory;
         private readonly string _publicClientId;
 
-        public OAuthProvider(string publicClientId, Func<IAppUserManager> userManagerFactory) {
+        public AppOAuthProvider(string publicClientId, Func<IAppUserManager> userManagerFactory) {
             publicClientId.ThrowIfNull("publicClientId");
 
             _publicClientId = publicClientId;
