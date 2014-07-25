@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntityFramework\Configurations\BaseEntityConfiguration.cs" />
+    <Compile Include="EntityFramework\Configurations\IdentityConfigurations.cs" />
     <Compile Include="EntityFramework\Conventions\ForeignKeyNamingConvention.cs" />
     <Compile Include="EntityFramework\IDbContext.cs" />
     <Compile Include="EntityFramework\PersistableRepository.cs" />
