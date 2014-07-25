@@ -185,6 +185,26 @@ namespace tc_dev.Core.Infrastructure.Identity
             return claimsIdentity;
         }
 
+        public AppUser FindByUserNameAndPassword(string userName, string password) {
+            userName.ThrowIfNull("userName");
+            password.ThrowIfNull("password");
+
+            var identityUser = _userManager.Find(userName, password);
+            var appUser = IdentityModelFactory.Create(identityUser);
+
+            return appUser;
+        }
+
+        public async Task<AppUser> FindByUserNameAndPasswordAsync(string userName, string password) {
+            userName.ThrowIfNull("userName");
+            password.ThrowIfNull("password");
+
+            var identityUser = await _userManager.FindAsync(userName, password);
+            var appUser = IdentityModelFactory.Create(identityUser);
+
+            return appUser;
+        }
+
         public AppUser FindByEmail(string email) {
             email.ThrowIfNull("email");
 

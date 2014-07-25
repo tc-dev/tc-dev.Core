@@ -31,6 +31,9 @@ namespace tc_dev.Core.Identity
         ClaimsIdentity CreateIdentity(AppUser user, string authenticationType);
         Task<ClaimsIdentity> CreateIdentityAsyc(AppUser user, string authenticationType);
 
+        AppUser FindByUserNameAndPassword(string userName, string password);
+        Task<AppUser> FindByUserNameAndPasswordAsync(string userName, string password);
+
         AppUser FindByEmail(string email);
         Task<AppUser> FindByEmailAsync(string email);
 
