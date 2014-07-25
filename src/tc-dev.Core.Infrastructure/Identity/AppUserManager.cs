@@ -173,7 +173,7 @@ namespace tc_dev.Core.Infrastructure.Identity
             return claimsIdentity;
         }
 
-        public async Task<ClaimsIdentity> CreateIdentityAsyc(AppUser user, string authenticationType) {
+        public async Task<ClaimsIdentity> CreateIdentityAsync(AppUser user, string authenticationType) {
             user.ThrowIfNull("user");
             authenticationType.ThrowIfNull("authenticationType");
 

@@ -29,7 +29,7 @@ namespace tc_dev.Core.Identity
         Task<AppIdentityResult> CreateAsync(AppUser user, string password);
 
         ClaimsIdentity CreateIdentity(AppUser user, string authenticationType);
-        Task<ClaimsIdentity> CreateIdentityAsyc(AppUser user, string authenticationType);
+        Task<ClaimsIdentity> CreateIdentityAsync(AppUser user, string authenticationType);
 
         AppUser FindByUserNameAndPassword(string userName, string password);
         Task<AppUser> FindByUserNameAndPasswordAsync(string userName, string password);
